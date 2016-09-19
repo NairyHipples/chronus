@@ -1,0 +1,16 @@
+<div id="onPage-view-name">Sök</div>
+<div class="container page-container">
+  <h1 class="partialHeader">Sökresultat <span class="glyphicon glyphicon-search" aria-hidden="true"></span></h1>
+    <div class="row rowPost">
+      <div class="col-sm-6 col-md-4 col-lg-4 bookDiv" data-ng-repeat="book in books | filter:filter.name | orderBy:'name'">
+        <h4 class="book-title"><strong>{{ book.title }}</strong></h4>
+        <p class="book-name">- {{ book.name }}</p>
+        <img class="img-responsive book-img center-block" data-ng-src="{{ book.img }}" alt="{{ book.name }}">
+        <hr>
+      </div><!-- /bookDiv & col -->
+    </div><!-- /row & rowPost -->
+    <footer>
+      <p>© 2016 Jonatan Östling, Inc.</p>
+    </footer>
+</div><!-- /container & page-container -->
+<script src="scripts/onPageViewName.js" charset="utf-8"></script>

@@ -1,0 +1,141 @@
+/******IMPORTS******/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600italic,600,300,800);
+/******GENERAL******/
+body {
+  padding-top: 50px;
+  background-color: #EBEBEB;
+}
+footer {
+  text-align: center;
+}
+/******CONTAINER******/
+.page-container {
+  background-color: #FFF;
+  border: 1px solid #DDD;
+  border-top: none;
+}
+.rowPost {
+  border-top: 10px solid #337AB7;
+}
+.bookDiv {
+  text-align: center;
+}
+/******NAVBAR******/
+.nav {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+.navbar {
+  border: 0px;
+  box-shadow: 0px 0px 5px #000;
+}
+.navbar-collapse.in {
+  overflow-y: visible;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+  background-color: #337AB7;
+}
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+  max-height: none;
+}
+.navbar-brand {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+  color: #000;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu>li.active>a,
+.navbar-inverse .navbar-nav .open .dropdown-menu>li.active>a:hover {
+  background-color: #337AB7;
+  color: #FFF;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
+  background-color: #EBEBEB;
+  color: #000;
+}
+.navbar-inverse .navbar-nav>li>a:hover{
+  background-color: #000;
+}
+/******JUMBOTRON******/
+.jumbotron {
+  background: url('../img/logos/book-01.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  margin-bottom: 0px;
+}
+.jumbo-p {
+  margin-top: 0px;
+  color: #FFF;
+  text-shadow: 0px 0px 5px #000;
+  font-family: 'Open Sans', sans-serif;
+}
+/******SEARCH FIELD******/
+.searchField {
+  max-width: 500px;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+}
+input.form-control {
+  height: 46px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  font-size: 1.5em;
+}
+.book-title, .book-name {
+  font-family: 'Open Sans', sans-serif;
+}
+.partialHeader {
+  text-align: center;
+}
+/******IMAGE RELATED******/
+#img-text {
+  text-align: center;
+  font-size: 4em;
+  margin-top: 0px;
+  color: #FFF;
+  text-shadow: 0px 0px 5px #000;
+}
+.book-img {
+  height: 200px;
+}
+.img_container {
+  margin-top: 0px;
+}
+.hembild {
+  width: 300px;
+}
+/****** BUTTONS ******/
+.searchBtn {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+/****** GLYPHICONS ******/
+.glyphicon {
+  top: 2px;
+}
+.partialHeader .glyphicon {
+  top: 5px;
+}
+/******VIEWS******/
+#view-div {
+  display: inline-block;
+  height: 35px;
+  margin-top: 8px;
+  margin-bottom: 0px;
+  padding-left: 10px;
+  vertical-align: middle;
+  color: #FFFFFF;
+  border-left: 3px solid #337AB7;
+}
+#view-name {
+  margin-top: 8px;
+}
+#onPage-view-name {
+  display: none;
+}

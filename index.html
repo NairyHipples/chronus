@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html data-ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <!-- For rendering and touch zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css" media="screen">
+    <title>Bokfynd.nu</title>
+  </head>
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" data-ng-controller="navController">
+      <div class="container">
+        <div class="navbar-header"><!-- Wrapping the collapse menu in .navbar-header for Bootstrap v.3 -->
+          <a href="#/">
+            <!-- Removed data-toggle="tooltip" data-placement="bottom" since it doesn't look good on an iPad -->
+            <img title="Hem" class="navbar-brand" src="img/logos/uggla1.png" alt="Bokfynd Logga" />
+          </a>
+
+          <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <div id="view-div">
+            <p id="view-name">
+            </p>
+          </div>
+
+        </div><!-- /navbar-header -->
+        <div class="collapse collapse navbar-collapse navHeaderCollapse">
+
+          <ul class="nav navbar-nav navbar-right">
+            <li data-ng-class="{active: isActive('/')}">
+              <a href="#/home">Hem <span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
+            </li>
+            <li data-ng-class="{active: isActive('/search')}">
+              <a href="#/search">Sök <span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+            </li>
+            <li data-ng-class="{active: isActive('/help')}">
+              <a href="#/help">Hjälp <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></a>
+            </li>
+            <li data-ng-class="{active: isActive('/contact')}">
+              <a href="#/contact">Kontakt <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a>
+            </li>
+            <!-- commented out a dropdown in case i need to use it -->
+            <!-- <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown">Övrigt <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li data-ng-class="{active: isActive('/limhamn')}"><a href="#/limhamn">Översikt</a></li>
+                <li><a>Kontor/Personal <b class="caret"></b></a></li>
+                <li data-ng-class="{active: isActive('/limhamn_ak')}"><a href="#/limhamn_ak">Administration/Krematorie</a></li>
+              </ul>
+            </li> -->
+          </ul>
+        </div>
+      </div><!-- /container -->
+    </div><!-- /navbar div -->
+
+    <div class="jumbotron">
+      <div class="container">
+        <div class="img_container">
+          <a href="#/">
+            <img class="hembild center-block" src="img/logos/uggla1.png" alt="Bokfynd Logga" />
+          </a><!-- /anchor -->
+            <div class="imgtextdiv">
+              <h1 id="img-text">bokfynd.nu</h1>
+              <p class='jumbo-p'><em>- Jämför priser på böcker</em></p>
+            </div>
+        </div><!-- /img_container -->
+        <div class="input-group searchField">
+          <input type="text" class="form-control" placeholder="Sök bland böcker..." data-ng-model="filter.name">
+          <span class="input-group-btn">
+            <a class="btn btn-primary btn-lg searchBtn" type="button" href="#/search">Sök <span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+          </span>
+        </div><!-- /input-group & searchField -->
+      </div><!-- /container -->
+    </div><!-- /jumbotron -->
+
+    <!-- Placeholder for views -->
+    <div class="view_container" data-ng-view></div>
+
+    <!-- Latest minified jQuery -->
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <!-- AngularJS route -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-route.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- My AngularJS file -->
+    <script src="app/app.js"></script>
+    <!-- Angular Nav Controller -->
+    <script src="app/controllers/navController.js"></script>
+    <!-- My JS file -->
+    <!-- <script src="scripts/main.js"></script> -->
+    <!-- Wheelzoom plugin -->
+    <!-- <script src="scripts/wheelzoom/wheelzoom.js"></script> -->
+  </body>
+</html>
