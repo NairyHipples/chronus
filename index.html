@@ -7,7 +7,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css" media="screen">
-    <title>Bokfynd.nu</title>
+    <title>Chronus Official Website</title>
   </head>
   <body>
 
@@ -16,7 +16,7 @@
         <div class="navbar-header"><!-- Wrapping the collapse menu in .navbar-header for Bootstrap v.3 -->
           <a href="#/">
             <!-- Removed toggle="tooltip" placement="bottom" since it doesn't look good on an iPad -->
-            <img title="Home" class="navbar-brand brandlogo" src="img/logos/handmadeshadowsinverted.png" alt="Chronus Logo" />
+            <img title="Home" class="navbar-brand" src="img/logos/handmadeshadowsinverted.png" alt="Chronus Logo" />
           </a>
 
           <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
@@ -35,16 +35,16 @@
 
           <ul class="nav navbar-nav navbar-right">
             <li ng-class="{active: isActive('/')}">
-              <a href="#/home">Hem <span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
+              <a href="#/home">HOME</a>
             </li>
             <li ng-class="{active: isActive('/search')}">
-              <a href="#/search">Sök <span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+              <a href="#/search">SEARCH</a>
             </li>
             <li ng-class="{active: isActive('/help')}">
-              <a href="#/help">Hjälp <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></a>
+              <a href="#/help">ABOUT</a>
             </li>
             <li ng-class="{active: isActive('/contact')}">
-              <a href="#/contact">Kontakt <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a>
+              <a href="#/contact">CONTACT</a>
             </li>
             <!-- commented out a dropdown in case i need to use it -->
             <!-- <li class="dropdown">
@@ -60,25 +60,7 @@
       </div><!-- /container -->
     </div><!-- /navbar div -->
 
-    <div class="jumbotron">
-      <div class="container">
-        <div class="img_container">
-          <a href="#/">
-            <img class="hembild center-block" src="img/logos/handmadeshadowsinverted.png" alt="Bokfynd Logga" />
-          </a><!-- /anchor -->
-            <div class="imgtextdiv">
-              <h1 id="img-text">bokfynd.nu</h1>
-              <p class='jumbo-p'><em>- Jämför priser på böcker</em></p>
-            </div>
-        </div><!-- /img_container -->
-        <div class="input-group searchField">
-          <input type="text" class="form-control" placeholder="Sök bland böcker..." ng-model="filter.name">
-          <span class="input-group-btn">
-            <a class="btn btn-primary btn-lg searchBtn" type="button" href="#/search">Sök <span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
-          </span>
-        </div><!-- /input-group & searchField -->
-      </div><!-- /container -->
-    </div><!-- /jumbotron -->
+
 
     <!-- Placeholder for views -->
     <div id="main">
