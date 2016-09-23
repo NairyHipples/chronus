@@ -270,4 +270,18 @@ textarea {
     padding-bottom: 0px;
     height: 50px;
   }
+  .copytextdiv {
+    height: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    padding: 10px;
+    width: 100%;
+  }
+  .copytext {
+    margin-top: 10px;
+  }
+  .closeSpan {
+    font-size: 32px;
+  }
 }
