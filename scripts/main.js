@@ -8,18 +8,22 @@ $(document).ready(function() {
 
   var clipboard = new Clipboard('.copybtn');
   clipboard.on('success', function(e) {
-      console.info('Action:', e.action);
-      console.info('Text:', e.text);
-      $('.copytextdiv').show(300);
-      $('.closeSpan').click(function(){
-        $('.copytextdiv').hide(300);
-      });
-      e.clearSelection();
+    console.info('Action:', e.action);
+    console.info('Text:', e.text);
+    $('.copytextdiv-success').show(300);
+    $('.closeSpan').click(function(){
+      $('.copytextdiv-success').hide(300);
+    });
+    e.clearSelection();
   });
 
   clipboard.on('error', function(e) {
-      console.error('Action:', e.action);
-      $('.copytextdiv').hide(300);
+    console.error('Action:', e.action);
+    $('.copytextdiv-success').hide(300);
+    $('.copytextdiv-fail').show(300);
+    $('.closeSpan').click(function(){
+      $('.copytextdiv-fail').hide(300);
+    });
   });
   // var visible = false;
   // var onPageViewName = $('#onPage-view-name').contents();

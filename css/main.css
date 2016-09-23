@@ -193,7 +193,7 @@ textarea {
   font-size: 20px;
   outline: none;
 }
-.copytextdiv {
+.copytextdiv-success {
   display: none;
   height: 80px;
   margin: 20px;
@@ -204,7 +204,22 @@ textarea {
   font-size: 20px;
   color: #fff;
 }
-.copytext {
+.copytextdiv-fail {
+  display: none;
+  height: 80px;
+  margin: 20px;
+  padding: 20px;
+  width: 400px;
+  background: #822A2A;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  color: #fff;
+}
+.copytext-success {
+  float: left;
+  margin-top: 6px;
+}
+.copytext-fail {
   float: left;
   margin-top: 6px;
 }
@@ -276,7 +291,7 @@ textarea {
     padding-bottom: 0px;
     height: 50px;
   }
-  .copytextdiv {
+  .copytextdiv-success {
     height: 70px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -284,7 +299,18 @@ textarea {
     padding: 10px;
     width: 100%;
   }
-  .copytext {
+  .copytextdiv-fail {
+    height: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    padding: 10px;
+    width: 100%;
+  }
+  .copytext-success {
+    margin-top: 10px;
+  }
+  .copytext-fail {
     margin-top: 10px;
   }
   .closeSpan {
