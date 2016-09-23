@@ -1,11 +1,13 @@
 /******IMPORTS******/
-@import 'https://fonts.googleapis.com/css?family=Oswald';
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600italic,600,300,800);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
 /******GENERAL******/
 body {
   padding-top: 100px;
   background-color: #000;
-  color: #666;
+  color: #888;
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
 }
 
 footer {
@@ -117,7 +119,14 @@ hr {
   text-shadow: 0px 0px 5px #000;
   font-family: 'Oswald', sans-serif;
 }
-
+.arrow {
+  font-size: 80px;
+  color: #fff;
+}
+.arrow:hover {
+  color: #000;
+  cursor: pointer;
+}
 /******SEARCH FIELD******/
 .searchField {
   max-width: 500px;
@@ -135,6 +144,10 @@ input.form-control {
 }
 .partialHeader {
   text-align: center;
+}
+/******SECTIONS******/
+#homesection {
+  
 }
 /******IMAGE RELATED******/
 #img-text {

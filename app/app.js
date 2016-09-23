@@ -8,8 +8,8 @@ app.config(['$routeProvider', '$locationProvider',
       templateUrl: 'app/partials/home/home.html',
       controller: 'navController'
     })
-    .when('/help', {
-      templateUrl: 'app/partials/help/help.html',
+    .when('/band', {
+      templateUrl: 'app/partials/help/band.html',
       controller: 'navController'
     })
     .when('/search', {
