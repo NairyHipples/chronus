@@ -5,22 +5,24 @@ app.config(['$routeProvider', '$locationProvider',
 
   $routeProvider
     .when('/', {
-      controller: 'navController',
-      templateUrl: 'app/partials/home/home.html'
+      templateUrl: 'app/partials/home/home.html',
+      controller: 'navController'
     })
     .when('/help', {
-      controller: 'navController',
-      templateUrl: 'app/partials/help/help.html'
+      templateUrl: 'app/partials/help/help.html',
+      controller: 'navController'
     })
     .when('/search', {
-      controller: 'searchController',
-      templateUrl: 'app/partials/search/search.html'
+      templateUrl: 'app/partials/search/search.html',
+      controller: 'searchController'
     })
     .when('/contact', {
-      controller: 'navController',
-      templateUrl: 'app/partials/contact/contact.html'
+      templateUrl: 'app/partials/contact/contact.html',
+      controller: 'navController'
     })
     .otherwise({ redirectTo: '/' });
+
+
 }]);
 
 var controllers = {};
