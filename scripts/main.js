@@ -1,10 +1,25 @@
 //DOC ready
+
 $(document).ready(function() {
   //Jag har provat en massa funktioner som jag lämnar kvar för att komma ihåg i framtiden
   $('body').click(function(){
     $('.navHeaderCollapse').collapse('hide');
   });
 
+  var clipboard = new Clipboard('.copybtn');
+  clipboard.on('success', function(e) {
+      console.info('Action:', e.action);
+      console.info('Text:', e.text);
+      $('.copytextdiv').show(300);
+      $('.closeSpan').click(function(){
+        $('.copytextdiv').hide(300);
+      });
+      e.clearSelection();
+  });
+
+  clipboard.on('error', function(e) {
+      console.error('Action:', e.action);
+  });
   // var visible = false;
   // var onPageViewName = $('#onPage-view-name').contents();
   // $('#view-name').append(onPageViewName);

@@ -170,6 +170,9 @@ textarea {
   padding-left: 20px;
 }
 /****** BUTTONS ******/
+.btn:focus {
+  outline: none;
+}
 .searchBtn {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -182,6 +185,42 @@ textarea {
   background-color: #862D3F;
   border-radius: 0px;
   font-size: 20px;
+  outline: none;
+}
+.copytextdiv {
+  display: none;
+  height: 80px;
+  margin: 20px;
+  padding: 20px;
+  width: 400px;
+  background: #2A8234;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  color: #fff;
+}
+.copytext {
+  float: left;
+  margin-top: 6px;
+}
+.closeSpan {
+  float: right;
+  background: none;
+  border: none;
+  font-size: 25px;
+}
+.closeSpan:focus{
+  outline: none;
+}
+.closeSpan:hover{
+  color: #0D4013;
+}
+.copybtn{
+  width: 220px;
+  display:block;
+  margin-top: 10px;
+}
+.chronusemail {
+  display: inline;
 }
 /****** GLYPHICONS ******/
 .glyphicon {
