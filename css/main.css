@@ -120,12 +120,13 @@ hr {
   font-family: 'Oswald', sans-serif;
 }
 .arrow {
-  font-size: 80px;
+  text-decoration: none;
+  font-size: 70px;
   color: #fff;
 }
 .arrow:hover {
-  color: #000;
-  cursor: pointer;
+  color: #fff;
+  cursor: default;
 }
 /******SEARCH FIELD******/
 .searchField {
