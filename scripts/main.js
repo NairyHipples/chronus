@@ -19,6 +19,7 @@ $(document).ready(function() {
 
   clipboard.on('error', function(e) {
       console.error('Action:', e.action);
+      $('.copytextdiv').hide(300);
   });
   // var visible = false;
   // var onPageViewName = $('#onPage-view-name').contents();
