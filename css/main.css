@@ -143,8 +143,8 @@ textarea {
 }
 .partialHeader {
   text-align: center;
-  background-color: #862D3F;
-  border: 4px solid #BBB486;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #BBB486;
 }
 /******SECTIONS******/
 #homesection {
