@@ -13,6 +13,7 @@ body {
 footer {
   text-align: center;
 }
+
 h1, h2, h3, h4, h5 {
   font-family: 'Oswald', sans-serif;
   color: #fff;
@@ -44,7 +45,7 @@ hr {
 
 }
 .rowPost {
-  border-top: 2px solid #222;
+  border-top: 2px solid #BBB486;
 }
 .bookDiv {
   text-align: center;
@@ -157,6 +158,15 @@ textarea {
   padding: 10px 10px 5px 10px;
   margin-bottom: 10px;
 }
+.album-img {
+  max-width: 600px;
+  margin: 0px auto;
+  border: 2px solid #111;
+  display: inline-block;
+}
+.bandpost {
+  text-align: center;
+}
 /******IMAGE RELATED******/
 #img-text {
   text-align: center;
@@ -174,6 +184,18 @@ textarea {
 .homelogo {
   width: 800px;
   padding-left: 20px;
+}
+.img-thumbnail {
+  max-height: 600px;
+  margin-top: 20px;
+  border: 2px solid #222;
+  padding: 0;
+  background-color: none;
+  border-radius: 0px;
+
+}
+.center {
+  text-align: center;
 }
 /****** BUTTONS ******/
 .btn:focus {
