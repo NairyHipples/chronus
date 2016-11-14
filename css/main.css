@@ -151,7 +151,7 @@ hr {
   text-align: center;
   margin-bottom: 0px;
   padding-bottom: 0px;
-  height: 1000px;
+  height: 940px;
 }
 .jumbo-p {
   margin-top: 0px;
@@ -286,78 +286,19 @@ textarea {
   text-align: center;
   display: inline-block;
 }
-.pi1container {
-  height: 600px;
-  padding: 20px;
-  background-color: #AA814B;
-}
-.pi1 h3 {
-  font-family: 'Abril Fatface', cursive;
-  color: #FFD8AD;
-  font-size: 50px;
-}
-.pi1 {
-  margin-top: 80px;
-  font-size: 36px;
-  color: #fff;
-  text-align: center;
-  text-shadow: 0px 0px 6px #000;
-}
-.pi2container {
-  /*background-image: url("../img/logos/pexels-photo-89860.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;*/
-  height: 600px;
-  padding: 20px;
-  background-color: #4C7A34;
-}
-.pi2 {
-  margin-top: 80px;
-  font-family: 'Luckiest Guy', cursive;
-  font-size: 36px;
-  color: #FEF67F;
-  text-align: center;
-  text-shadow: 0px 0px 6px #000;
-}
-.circle {
-  width: 300px;
-  height: 300px;
-  border-radius: 150px;
-  font-family: 'Covered By Your Grace', cursive;
-  font-size: 60px;
-  line-height: 60px;
-  color:#fff;
-  margin: 0px auto;
-  text-align: center;
-  background: #333;
-}
-.circle p {
-  padding-top: 25px;
-  -ms-transform: rotate(-11deg); /* IE 9 */
-  -webkit-transform: rotate(-11deg); /* Chrome, Safari, Opera */
-  transform: rotate(-11deg);
-}
-.pi3container {
-  height: 600px;
-  padding: 20px;
-  background-color: #E66A6A;
-}
-.pi3p {
-  margin-top: 20px;
-  font-size: 36px;
-  color: #934848;
-  text-shadow: 0px 0px 1px #000;
-  text-align: center;
-}
 /******IMAGE RELATED******/
 .banderoll {
   width: 100%;
-  background-color: white;
+  background-color: #000;
+  -webkit-box-shadow: 0px 57px 45px 27px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 57px 45px 27px rgba(0,0,0,1);
+  box-shadow: 0px 57px 45px 27px rgba(0,0,0,1);
+
   /*background-image: url(../img/logos/Banner_vectorized.png);
   background-repeat: repeat-x;
   background-size: 105px 25px;*/
-  height: 10px;
+
+  height: 60px;
 }
 #img-text {
   text-align: center;
@@ -580,7 +521,10 @@ textarea {
     top: 970px;
   }
   .info-section {
-    top: 280px;
+    top: 330px;
+  }
+  h2 {
+    font-size: 21px;
   }
 }
 @media (max-width: 389px) {
