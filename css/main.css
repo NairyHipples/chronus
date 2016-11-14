@@ -182,6 +182,7 @@ textarea {
 }
 .partialHeader {
   text-align: center;
+  padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 2px solid #AA814B;
   font-weight: 800;
