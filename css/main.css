@@ -3,18 +3,21 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
 @import 'https://fonts.googleapis.com/css?family=Abril+Fatface|Averia+Sans+Libre|Covered+By+Your+Grace|Julius+Sans+One|Lato|Luckiest+Guy';
 /******GENERAL******/
-
+html {
+  width: 100%;
+  height: 100%;
+}
 body {
   background-image: url("../img/logos/bannerredux.jpg");
   /* Create the parallax scrolling effect */
   width: 100%;
   background-attachment: fixed;
-  background-position: bottom;
+  background-position: top;
   background-repeat: no-repeat;
-  -webkit-background-size: 100%;
-   -moz-background-size: 100%;
-   -o-background-size: 100%;
-  background-size: 100%;
+  -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+  background-size: cover;
   padding-top: 100px;
   background-color: #333;
   font-family: 'Lato', sans-serif;
