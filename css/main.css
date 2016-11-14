@@ -13,9 +13,10 @@ body {
   background-attachment: fixed;
   background-position: bottom;
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
   background-size: cover;
-  height: 100%;
-  width: 100%;
   padding-top: 100px;
   background-color: #333;
   font-family: 'Lato', sans-serif;
@@ -182,7 +183,6 @@ textarea {
 }
 .partialHeader {
   text-align: center;
-  padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 2px solid #AA814B;
   font-weight: 800;
@@ -499,6 +499,9 @@ textarea {
   .about-section,
   .info-section {
     padding-top: 50px;
+  }
+  .partialHeader {
+    padding-top: 10px;
   }
 }
 @media (max-width: 556px) {
