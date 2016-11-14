@@ -8,16 +8,16 @@ app.config(['$routeProvider', '$locationProvider',
       templateUrl: 'app/partials/home/home.html',
       controller: 'navController'
     })
-    .when('/band', {
-      templateUrl: 'app/partials/help/band.html',
-      controller: 'navController'
+    .when('/play-inspiration', {
+      templateUrl: 'app/partials/play-inspiration/play-inspiration.html',
+      controller: 'playController'
     })
-    .when('/search', {
-      templateUrl: 'app/partials/search/search.html',
-      controller: 'searchController'
+    .when('/book', {
+      templateUrl: 'app/partials/book/book.html',
+      controller: 'bookController'
     })
-    .when('/contact', {
-      templateUrl: 'app/partials/contact/contact.html',
+    .when('/info', {
+      templateUrl: 'app/partials/info/info.html',
       controller: 'navController'
     })
     .otherwise({ redirectTo: '/' });
@@ -26,17 +26,15 @@ app.config(['$routeProvider', '$locationProvider',
 }]);
 
 var controllers = {};
-controllers.searchController = function($scope) {
+controllers.bookController = function($scope) {
   $scope.books = [
-    { name: 'J.R.R. Tolkien', title: 'The Hobbit', img: 'img/books/hobbit.jpg'},
-    { name: 'Harper Lee', title: 'To Kill A Mockingbird', img: 'img/books/mockingbird.jpg'},
-    { name: 'Scott Fitzgerald', title: 'The Great Gatsby', img: 'img/books/gatsby.jpg'},
-    { name: 'Joseph Heller', title: 'Catch-22', img: 'img/books/22.jpg'},
-    { name: 'Anthony Burgess', title: 'A Clockwork Orange', img: 'img/books/clockwork.jpg'},
-    { name: 'Dr. Seuss', title: 'The Cat in the Hat', img: 'img/books/cat.png'},
-    { name: 'Chris Mould', title: 'Something Wickedly Weird', img: 'img/books/wicked.jpg'},
-    { name: 'George R.R. Martin', title: 'A Game of Thrones', img: 'img/books/thrones.jpg'},
-    { name: 'J.D. Salinger', title: 'The Catcher in the Rye', img: 'img/books/rye.jpg' }
+    { name: 'Samuel West & Niklas Madsen', title: 'Playful Office', img: 'img/books/clockwork.jpg'}
+
+  ];
+};
+controllers.playController = function($scope){
+  $scope.plays = [
+    { title: 'Shoot your coworker during a meeting with a nerf gun to get his/her attention.'}
   ];
 };
 

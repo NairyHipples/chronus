@@ -1,0 +1,25 @@
+<!-- <div id="onPage-view-name">Buy the Book</div> -->
+<div class="container page-container">
+  <h1 class="partialHeader">The Book</h1>
+  <div class="row rowPost">
+    <div class="col-sm-6 col-md-6 col-lg-6 bookDiv" data-ng-repeat="book in books | filter:filter.name | orderBy:'name'">
+      <!-- <h4 class="book-title"><strong>{{ book.title }}</strong></h4>
+      <p class="book-name">- {{ book.name }}</p> -->
+      <img class="img-responsive book-img center-block" data-ng-src="{{ book.img }}" alt="{{ book.name }}">
+
+    </div><!-- /bookDiv & col -->
+    <div class="col-sm-6 col-md-6 col-lg-6">
+      <h3>Playful Office&trade;</h3>
+      <p>A book that will help you change your workplace for good.</p>
+      <p><a target="_blank" href="https://www.amazon.com" class="btn btn-default buy" role="button">PURCHASE ON AMAZON <span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+    </div><!-- /col -->
+  </div><!-- /row & rowPost -->
+  <hr>
+
+  <footer>
+    <p>© 2016 Jonatan Östling.</p>
+  </footer>
+</div><!-- /container & page-container -->
+<div class="banderoll"></div>
+
+<!-- <script src="scripts/onPageViewName.js" charset="utf-8"></script> -->

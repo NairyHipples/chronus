@@ -7,16 +7,33 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css" media="screen">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <title>Chronus Official Website</title>
   </head>
-  <body>
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <div class="navbar navbar-inverse navbar-fixed-top" ng-controller="navController">
       <div class="container">
         <div class="navbar-header"><!-- Wrapping the collapse menu in .navbar-header for Bootstrap v.3 -->
-          <a href="#/">
-            <!-- Removed toggle="tooltip" placement="bottom" since it doesn't look good on an iPad -->
-            <img title="Home" class="navbar-brand" src="img/logos/handmadeshadowsinverted.png" alt="Chronus Logo" />
+          <a class="page-scroll" href="#page-top">
+            <img class="navbar-brand" src="img/logos/handmadeshadowsinverted.png" alt="" />
           </a>
 
           <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
@@ -25,48 +42,151 @@
             <span class="icon-bar"></span>
           </button>
 
-          <div id="view-div">
-            <p id="view-name">
-            </p>
-          </div>
-
         </div><!-- /navbar-header -->
-        <div class="collapse collapse navbar-collapse navHeaderCollapse">
+        <div class="collapse collapse navbar-collapse navHeaderCollapse navbar-ex1-collapse">
 
           <ul class="nav navbar-nav navbar-right">
-            <li ng-class="{active: isActive('/')}">
-              <a href="#/home">HOME</a>
+            <li class="hidden">
+                <a class="page-scroll" href="#page-top"></a>
             </li>
-            <li ng-class="{active: isActive('/search')}">
-              <a href="#/search">SEARCH</a>
+            <li>
+              <a  id="b-b" class="page-scroll" href="#music">Music</a>
             </li>
-            <li ng-class="{active: isActive('/band')}">
-              <a href="#/band">BAND</a>
-            </li>
-            <li ng-class="{active: isActive('/contact')}">
-              <a href="#/contact">CONTACT</a>
-            </li>
-            <!-- commented out a dropdown in case i need to use it -->
-            <!-- <li class="dropdown">
-              <a class="dropdown-toggle" toggle="dropdown">Övrigt <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li ng-class="{active: isActive('/limhamn')}"><a href="#/limhamn">Översikt</a></li>
-                <li><a>Kontor/Personal <b class="caret"></b></a></li>
-                <li ng-class="{active: isActive('/limhamn_ak')}"><a href="#/limhamn_ak">Administration/Krematorie</a></li>
-              </ul>
+            <!-- <li>
+              <a id="p-i" class="page-scroll" href="#about">About</a>
             </li> -->
+            <li>
+              <a id="i-i" class="page-scroll info" href="#info">Contact</a>
+            </li>
           </ul>
         </div>
       </div><!-- /container -->
     </div><!-- /navbar div -->
 
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+      <div class="jumbotron">
+        <div class="container">
+          <div class="img_container">
+            <a>
+              <img class="homelogo img-responsive center-block" src="img/logos/handmadeshadowsinverted.png" alt="Chronus Logo" />
+            </a><!-- /anchor -->
+            <div class="imgtextdiv">
+              <!-- <p class='jumbo-p'>CHRONUS OFFICIAL WEBSITE</p> -->
 
+            </div>
+            <div class="karin">
+              <a target="_blank" href="https://www.facebook.com/"><img class="img-responsive social" src="img/logos/FB-f-Logo__white_1024.png" alt="fblogo" /></a>
+              <a target="_blank" href="https://www.youtube.com/user/"><img class="img-responsive social" src="img/logos/YouTube_light_color_icon.png" alt="ytlogo" /></a>
+              <a target="_blank" href="https://www.instagram.com/"><img class="img-responsive social" src="img/logos/glyph-logo_May2016.png" alt="iglogo" /></a>
+              <a target="_blank" href="https://twitter.com/"><img class="img-responsive social" src="img/logos/Twitter_Social_Icon_White.png" alt="twlogo" /></a>
+              <a target="_blank" href="https://www.sporify.com/"><img class="img-responsive social" src="img/logos/Spotify_Icon_RGB_White.png" alt="splogo" /></a>
 
-    <!-- Placeholder for views -->
-    <div id="main">
-      <div class="view_container" ng-view></div>
+              <br>
+              <a  href="#music" class="arrow page-scroll"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+            </div>
+          </div><!-- /img_container -->
+        </div><!-- /container -->
+        <!-- <div class="banderoll"></div> -->
+      </div><!-- /jumbotron -->
+    </section>
+    <div class="banderoll"></div>
+
+    <div class="parallax1">
+      <div id="music" class="music-section">
+
+      </div>
     </div>
+    <section>
 
+      <!-- <div class="input-group searchField">
+      <input type="text" class="form-control" placeholder="Sök bland böcker..." ng-model="filter.name">
+      <span class="input-group-btn">
+      <a class="btn btn-primary btn-lg searchBtn" type="button" href="#/search">Sök <span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+      </span>
+      </div> /input-group & searchField -->
+    <!-- Placeholder for views -->
+    <!-- <div id="main">
+      <div class="view_container" ng-view></div>
+    </div> -->
+        <div class="black1">
+          <div class="container page-container">
+            <div class="row rowPost">
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="center">
+
+                  <img class="img-thumbnail" src="img/logos/14423809_10154524985985699_1231568987_o.jpg" alt="" />
+                </div>
+              </div><!-- /col -->
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="center1">
+
+                  <h1 class="partialHeader">SELF-TITLED ALBUM RELEASE 2016</h1>
+                  <p>The self-titled album "Chronus" will be available on all platforms, and linked here below when time is due.</p>
+                  <p>In the meantime keep track on our social media sites for updates.</p>
+                </div>
+                <div class="karin1">
+                  <div class="center">
+
+                    <a target="_blank" href="https://www.facebook.com/"><img class="img-responsive social" src="img/logos/FB-f-Logo__white_1024.png" alt="fblogo" /></a>
+                    <a target="_blank" href="https://www.youtube.com/user/"><img class="img-responsive social" src="img/logos/YouTube_light_color_icon.png" alt="ytlogo" /></a>
+                    <a target="_blank" href="https://www.instagram.com/"><img class="img-responsive social" src="img/logos/glyph-logo_May2016.png" alt="iglogo" /></a>
+                    <a target="_blank" href="https://twitter.com/"><img class="img-responsive social" src="img/logos/Twitter_Social_Icon_White.png" alt="twlogo" /></a>
+                    <a target="_blank" href="https://www.sporify.com/"><img class="img-responsive social" src="img/logos/Spotify_Icon_RGB_White.png" alt="splogo" /></a>
+                  </div>
+                </div>
+              </div><!-- /col -->
+            </div><!-- /row & rowPost -->
+          </div><!-- /container & page-container -->
+
+        </div>
+      </section>
+
+
+    <!-- <div class="parallax1">
+      <div id="about" class="about-section">
+      </div>
+    </div>
+    <section>
+      <div class="black">
+        <div class="banderoll"></div>
+
+        <div class="banderoll"></div>
+      </div>
+    </section> -->
+
+
+    <div class="parallax1">
+      <div id="info" class="info-section">
+      </div>
+    </div>
+    <section>
+
+      <div class="info1">
+
+        <div class="container page-container black">
+          <h1 class="partialHeader">Contact</h1>
+          <div class="row rowPost">
+            <div class="col-sm-12 col-md-12 col-lg-12 center">
+              <h3>BUSINESS</h3>
+              <p>For endorsement, interviews, merchandise, and artwork related questions and proposals, <strong>please use the e-mail address below.</strong></p>
+              <h2>chronusband@gmail.com</h2>
+
+            </div><!-- /col -->
+          </div><!-- /row & rowPost -->
+          <hr>
+          <footer>
+            <p>&copy; 2016 Chronus</p>
+          </footer>
+        </div><!-- /container & page-container -->
+      </div>
+    </section>
+
+    <div class="end">
+      <div class="parallax1"></div>
+
+
+    </div>
     <!-- Latest minified jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <!-- AngularJS -->
@@ -80,10 +200,8 @@
     <!-- Angular Nav Controller -->
     <script src="app/controllers/navController.js"></script>
     <script src="scripts/main.js"></script>
-    <script src="dist/clipboard.min.js"></script>
-    <!-- My JS file -->
-    <!-- <script src="scripts/main.js"></script> -->
-    <!-- Wheelzoom plugin -->
-    <!-- <script src="scripts/wheelzoom/wheelzoom.js"></script> -->
+    <script src="scripts/jquery.easing.min.js"></script>
+    <!-- Scrolling Nav JavaScript -->
+    <script src="scripts/scrolling-nav.js"></script>
   </body>
 </html>

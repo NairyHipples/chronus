@@ -1,2 +1,2 @@
 # chronus
-Chronus official website
+Chronus Official Website
