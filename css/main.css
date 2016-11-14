@@ -574,10 +574,10 @@ textarea {
 }
 @media (max-width: 400px) {
   .music-section {
-    top: 950px;
+    top: 970px;
   }
   .info-section {
-    top: 270px;
+    top: 280px;
   }
 }
 @media (max-width: 389px) {
