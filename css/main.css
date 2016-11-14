@@ -570,14 +570,15 @@ textarea {
   h2 {
     font-size: 24px;
   }
-}
-@media (max-width: 400px) {
   .music-section {
-    top: 920px;
+    top: 950px;
   }
   .info-section {
-    top: 240px;
+    top: 270px;
   }
+}
+@media (max-width: 400px) {
+
 }
 @media (max-width: 389px) {
 
