@@ -5,5 +5,5 @@ $(document).ready(function() {
   $('body').click(function(){
     $('.navHeaderCollapse').collapse('hide');
   });
-  $("#element").css("height", 0.9*$(window).height());
+  $("body").css("height", 0.9*$(window).height());
 }); // end DOC ready
