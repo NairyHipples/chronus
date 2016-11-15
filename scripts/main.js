@@ -6,9 +6,6 @@ $(document).ready(function() {
     $('.navHeaderCollapse').collapse('hide');
   });
   var bg = $("body");
-  $(window).resize("resizeBackground");
-  function resizeBackground() {
-    bg.height(jQuery(window).height() + 60);
-  }
-  resizeBackground();
+  bg.height($(window).height() + 60);
+
 }); // end DOC ready
