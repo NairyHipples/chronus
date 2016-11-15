@@ -12,7 +12,7 @@ body {
   /* Create the parallax scrolling effect */
   width: 100%;
   background-attachment: fixed;
-  background-position: right top;
+  background-position: center bottom;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
    -moz-background-size: cover;
