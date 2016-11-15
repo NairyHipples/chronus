@@ -9,7 +9,6 @@ html {
 }
 body {
   background-image: url("../img/logos/bannerredux.jpg");
-  /* Create the parallax scrolling effect */
   width: 100%;
   background-attachment: fixed;
   background-position: center bottom;
@@ -23,6 +22,18 @@ body {
   font-family: 'Lato', sans-serif;
   color: #fff;
   font-size: 26px;
+}
+.mobileBg1 {
+  background-image: url("../img/logos/bannerredux.jpg");
+  height: 400px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center bottom;
+  -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+  background-size: cover;
+  visibility: hidden;
 }
 footer {
   font-family: 'Lato', sans-serif;
@@ -517,6 +528,25 @@ textarea {
 @media (max-width: 443px) {
   h2 {
     font-size: 24px;
+  }
+  body{
+    background-image: none;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+    background-size: cover;
+    padding-top: 100px;
+    background-color: #333;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    font-size: 26px;
+  }
+  .mobileBg1 {
+    visibility: visible;
   }
 
 }
