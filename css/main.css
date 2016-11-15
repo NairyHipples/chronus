@@ -8,6 +8,7 @@ html {
   height: 100%;
 }
 body {
+  transition: height 999999s;
   background-image: url("../img/logos/bannerredux.jpg");
   /* Create the parallax scrolling effect */
   width: 100%;
