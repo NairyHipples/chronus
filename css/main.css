@@ -7,7 +7,7 @@ html {
   width: 100%;
   height: 100%;
 }
-#bg1 {
+body {
   background-image: url("../img/logos/bannerredux.jpg");
   /* Create the parallax scrolling effect */
   width: 100%;
@@ -18,8 +18,6 @@ html {
    -moz-background-size: cover;
    -o-background-size: cover;
   background-size: cover;
-}
-body {
   padding-top: 100px;
   background-color: #333;
   font-family: 'Lato', sans-serif;

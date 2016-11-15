@@ -8,7 +8,7 @@ $(document).ready(function() {
   $(function(){
 
   var $w = $(window),
-      $background = $('#bg1');
+      $background = $('body');
 
   // Fix background image jump on mobile
   if ((/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
