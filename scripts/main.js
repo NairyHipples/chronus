@@ -5,21 +5,4 @@ $(document).ready(function() {
   $('body').click(function(){
     $('.navHeaderCollapse').collapse('hide');
   });
-  $(function(){
-
-  var $w = $(window),
-      $background = $('body');
-
-  // Fix background image jump on mobile
-  if ((/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
-    $background.css({'top': 'auto', 'bottom': 0});
-
-    $w.resize(sizeBackground);
-    sizeBackground();
-  }
-
-  function sizeBackground() {
-     $background.height(screen.height);
-  }
-});
 }); // end DOC ready
